@@ -4,8 +4,8 @@ function removetransition(e){
 }
 
 function playsound(e){
-    let audio = document.querySelector(`audio[data-key="${e.code}"]`);
-    let key = document.querySelector(`.key[data-key="${e.code}"]`)
+    let audio;
+    let key;
      
     if(e.type=="keydown"){
         audio = document.querySelector(`audio[data-key="${e.code}"]`);
